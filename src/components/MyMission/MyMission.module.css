@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h5 {
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 0.8);
+  color: gray;
+  font-style: italic;
+  margin-top: calc((1vw + 1vh) * 2.5);
+  margin-bottom: calc((1vw + 1vh) * 2.5);
+}
+.container h1 {
+  font-family: "arial";
+  font-size: clamp(32px, calc((1vw + 1vh) * 4), 80px);
+  color: black;
+  text-align: center;
+  line-height: 0.95;
+}

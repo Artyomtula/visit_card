@@ -1,0 +1,130 @@
+.secondColumn {
+  width: 65%;
+  margin-top: calc((1vh + 1vw) * 12);
+  margin-bottom: calc((1vh + 1vw) * 6);
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: calc((1vw + 1vh) * 0.7);
+  margin-left: calc((1vw + 1vh) * 2);
+}
+.firstStroke {
+  display: flex;
+  gap: calc((1vw + 1vh) * 0.4);
+}
+.secondStroke {
+  display: flex;
+  gap: calc((1vw + 1vh) * 0.4);
+}
+
+.thirdStroke {
+  display: flex;
+  gap: calc((1vw + 1vh) * 0.4);
+}
+
+.fullGreen {
+  width: auto;
+  height: auto;
+  align-items: center;
+  border: 1px solid #9dfc03;
+  padding: calc((1vw + 1vh) * 0.3) calc((1vw + 1vh) * 2);
+  border-radius: calc((1vw + 1vh) * 2);
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 1);
+  color: black;
+  background-color: #9dfc03;
+}
+.borderGreen {
+  width: auto;
+  height: auto;
+  border: 1px solid #9dfc03;
+  padding: calc((1vw + 1vh) * 0.3) calc((1vw + 1vh) * 2);
+  border-radius: calc((1vw + 1vh) * 2);
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 1);
+  color: #9dfc03;
+  background-color: transparent;
+}
+.fullWhite {
+  width: auto;
+  height: auto;
+  border: 1px solid #9dfc03;
+  padding: calc((1vw + 1vh) * 0.3) calc((1vw + 1vh) * 2);
+  border-radius: calc((1vw + 1vh) * 2);
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 1);
+  color: black;
+  background-color: white;
+}
+
+.factsAboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: calc((1vw + 1vh) * 4);
+  margin-left: calc((1vw + 1vh) * 2);
+  margin-top: calc((1vw + 1vh) * 5);
+}
+
+.firstFact {
+  align-self: flex-start;
+  position: relative;
+  padding-left: 32px;
+}
+.firstFact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+.secondFact {
+  align-self: flex-end;
+  position: relative;
+  padding-left: 32px;
+}
+.secondFact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+.thirdFact {
+  align-self: flex-start;
+  position: relative;
+  padding-left: 32px;
+}
+.thirdFact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+.factTitle {
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 0.7);
+  color: white;
+  opacity: 0.6;
+  margin-bottom: calc((1vw + 1vh) * 0.2);
+}
+.role {
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 1.4);
+  color: white;
+  margin-bottom: calc((1vw + 1vh) * 1.5);
+}
+.factText {
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 0.7);
+  color: white;
+  line-height: 1.6;
+}
