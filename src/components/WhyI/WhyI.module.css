@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  background-color: #9dfc03;
+}
+.subContainer {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15vh 0 10vh 0;
+}
+.title {
+  position: relative;
+  margin-bottom: 10vh;
+}
+.text {
+  font-family: "arial";
+  font-size: calc((1vh + 1vw) * 5);
+  color: black;
+  line-height: 1;
+}
+img {
+  position: absolute;
+  transform: scale(0.8);
+  top: 2vh;
+  left: -2vw;
+}
+.characteristics {
+  display: flex;
+  justify-content: space-between;
+}
+.advantage {
+  width: 23%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.advNumber {
+  font-family: "arial";
+  font-size: calc((1vh + 1vw) * 0.7);
+  opacity: 0.6;
+  font-style: italic;
+}
+.advTitle {
+  font-family: "arial";
+  font-size: calc((1vh + 1vw) * 1.2);
+}
+.advDescription {
+  font-family: "arial";
+  font-size: calc((1vh + 1vw) * 0.9);
+}

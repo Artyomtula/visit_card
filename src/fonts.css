@@ -4,3 +4,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "TildaSansBold";
+  src: url("./assets/fonts/TildaSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSansRegular";
+  src: url("./assets/fonts/TildaSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

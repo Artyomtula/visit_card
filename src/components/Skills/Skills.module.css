@@ -1,0 +1,85 @@
+.container {
+  width: 100%;
+  background-color: white;
+}
+.subContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
+.skills {
+  display: flex;
+  margin: 10vh 0;
+  gap: 2vw;
+}
+.circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  width: calc((1vh + 1vw) * 12);
+  height: calc((1vh + 1vw) * 12);
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.skillText {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.title {
+  position: relative;
+  line-height: 0.8;
+}
+.text {
+  font-family: "arial";
+  font-size: calc((1vh + 1vw) * 5);
+  text-transform: uppercase;
+}
+.hsVector {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(0.9);
+}
+.ssVector {
+  position: absolute;
+  left: 30vw;
+  top: 3vh;
+  transform: scale(0.9);
+  transform: scale(-1, -1);
+}
+
+.softSkills div {
+  display: flex;
+  justify-content: end;
+}
+.hardSkills {
+  display: flex;
+  flex-direction: column;
+}
+
+.circleImg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%; /* или нужный размер */
+  height: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.11s;
+}
+.circle:hover {
+  background: #9dfc03;
+}
+.circle:hover .circleImg {
+  opacity: 1;
+}
+.circle:hover .skillText {
+  opacity: 0;
+}

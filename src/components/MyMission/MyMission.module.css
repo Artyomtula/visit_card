@@ -12,12 +12,22 @@
   color: gray;
   font-style: italic;
   margin-top: calc((1vw + 1vh) * 2.5);
-  margin-bottom: calc((1vw + 1vh) * 2.5);
+  margin-bottom: calc((1vw + 1vh) * 2);
 }
-.container h1 {
+.mainText {
+  position: relative;
+  z-index: 1;
+}
+.mainText h1 {
   font-family: "arial";
   font-size: clamp(32px, calc((1vw + 1vh) * 4), 80px);
   color: black;
   text-align: center;
   line-height: 0.95;
+}
+.mainText img {
+  position: absolute;
+  z-index: 2;
+  bottom: 29vh;
+  left: 5vw;
 }

@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 20vh 0;
+}
+.firstRow {
+  display: flex;
+  color: white;
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 4);
+  animation: firstRow 15s linear infinite;
+  line-height: 1;
+}
+.italic {
+  font-style: italic;
+}
+.secondRow {
+  display: flex;
+  color: white;
+  font-family: "arial";
+  font-size: calc((1vw + 1vh) * 4);
+  animation: secondRow 15s linear infinite;
+}
+.dot {
+  color: #9dfc03;
+  margin: 0 calc(2vw);
+}
+@keyframes firstRow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+@keyframes secondRow {
+  0% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
