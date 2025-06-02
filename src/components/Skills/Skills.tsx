@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import cl from "./Skills.module.css";
+import { motion } from "framer-motion";
 
 import Vector from "../../assets/images/Vector_2.svg";
 import Cpp from "../../assets/images/c++.png";
@@ -53,7 +54,13 @@ const Skills: FC<SkillsProps> = () => {
   return (
     <div className={cl.container}>
       <div className={cl.subContainer}>
-        <div className={cl.hardSkills}>
+        <motion.div
+          className={cl.hardSkills}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className={cl.title}>
             <span className={cl.text}>Hard-skills</span>
             <img src={Vector} className={cl.hsVector}></img>
@@ -66,8 +73,14 @@ const Skills: FC<SkillsProps> = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className={cl.softSkills}>
+        </motion.div>
+        <motion.div
+          className={cl.softSkills}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className={cl.title}>
             <span className={cl.text}>Soft-skills</span>
             <img src={Vector} className={cl.ssVector}></img>
@@ -80,7 +93,7 @@ const Skills: FC<SkillsProps> = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ const Achivments: FC<AchivmentsProps> = () => {
               {isReverse ? (
                 <>
                   <div className={cl.imgCard}>
-                    <img src={item.img} alt={item.title} />
+                    <img className={cl.img} src={item.img} alt={item.title} />
                   </div>
                   <div className={cl.textCardReverse}>
                     <h3>{item.title}</h3>
@@ -74,7 +74,7 @@ const Achivments: FC<AchivmentsProps> = () => {
                     <p>{item.text}</p>
                   </div>
                   <div className={cl.imgCard}>
-                    <img src={item.img} />
+                    <img className={cl.img} src={item.img} />
                   </div>
                 </>
               )}

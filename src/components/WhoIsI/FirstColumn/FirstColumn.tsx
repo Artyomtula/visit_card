@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { motion } from "motion/react";
 import cl from "./FirstColumn.module.css";
 
 import Vector from "../../../assets/images/Vector_1.svg";
@@ -9,7 +10,13 @@ interface FirstColumnProps {}
 
 const FirstColumn: FC<FirstColumnProps> = () => {
   return (
-    <div className={cl.firstColumn}>
+    <motion.div
+      className={cl.firstColumn}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <div className={cl.title}>
         <h2 className={cl.text}>Кто я?</h2>
         <img className={cl.vector} src={Vector}></img>
@@ -27,7 +34,7 @@ const FirstColumn: FC<FirstColumnProps> = () => {
           <div className={cl.circle}></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

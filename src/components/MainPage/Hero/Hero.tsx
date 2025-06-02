@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { motion } from "framer-motion";
 import cl from "./Hero.module.css";
 
 import mainPhoto from "../../../assets/images/main-photo.png";
@@ -14,21 +15,40 @@ const Hero: FC<HeroProps> = () => {
       <img className={cl.photo} src={mainPhoto}></img>
       <div className={cl.text}>
         <div className={cl.firstLine}>
-          <h1 className={cl.title}>Привет!</h1>
+          <motion.h1
+            className={cl.title}
+            initial={{ scaleX: 0, opacity: 0 }}
+            animate={{ scaleX: 1, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            style={{ originX: -1 }}
+          >
+            Привет!
+          </motion.h1>
           <img className={cl.arrow} src={arrow}></img>
         </div>
         <div className={cl.secondLine}>
-          <h4 className={cl.smallText}>
+          <motion.h4
+            className={cl.smallText}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             Здесь можно узнать больше <br />
             oбо мне, <br />
             моих навыках и достижениях
-          </h4>
+          </motion.h4>
           <div className={cl.button}>
             <img className={cl.circle} src={circle}></img>
-
             <img className={cl.play} src={play}></img>
           </div>
-          <h1>Я - Артем!</h1>
+          <motion.h1
+            initial={{ scaleX: 0, opacity: 0 }}
+            animate={{ scaleX: 1, opacity: 1 }}
+            transition={{ duration: 0.3, ease: "easeOut", delay: 0.3 }}
+            style={{ originX: -1 }}
+          >
+            Я - Артем!
+          </motion.h1>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import cl from "./WhyI.module.css";
+import { motion } from "framer-motion";
 
 import Vector from "../../assets/images/Vector_8.svg";
 interface WhyIProps {}
@@ -32,10 +33,16 @@ const WhyI: FC<WhyIProps> = () => {
   ];
   return (
     <div className={cl.container}>
-      <div className={cl.subContainer}>
+      <motion.div
+        className={cl.subContainer}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className={cl.title}>
           <span className={cl.text}>ПОЧЕМУ ВАМ НУЖЕН ИМЕННО Я?</span>
-          <img src={Vector}></img>
+          <img className={cl.img} src={Vector}></img>
         </div>
         <div className={cl.characteristics}>
           {advantages.map((adv, idx) => {
@@ -48,7 +55,7 @@ const WhyI: FC<WhyIProps> = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

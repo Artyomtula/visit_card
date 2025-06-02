@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.subContainer {
+  width: 80%;
+  margin-top: 15vh;
+  margin-bottom: 35vh;
+}
+.emailLine {
+  font-size: calc((1vh + 1vw) * 3);
+  color: black;
+  margin-bottom: 20px;
+  animation: firstRow 10s linear infinite;
+}
+@keyframes firstRow {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  font-size: 1vw;
+}
+
+.copyright {
+  font-size: 1vw;
+  opacity: 0.6;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: none;
+  color: inherit;
+}
+.links a:hover {
+  cursor: pointer;
+  color: #9dfc03;
+  text-decoration: none;
+}

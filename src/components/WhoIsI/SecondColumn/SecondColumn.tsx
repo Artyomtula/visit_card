@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { motion } from "framer-motion";
 import cl from "./SecondColumn.module.css";
 
 interface SecondColumnProps {}
@@ -24,7 +25,13 @@ const SecondColumn: FC<SecondColumnProps> = () => {
         </div>
       </div>
       <div className={cl.factsAboutMe}>
-        <div className={cl.firstFact}>
+        <motion.div
+          className={cl.firstFact}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h4 className={cl.factTitle}>
             <em>Факт обо мне №1</em>
           </h4>
@@ -35,8 +42,14 @@ const SecondColumn: FC<SecondColumnProps> = () => {
             "Орловском Государственном <br />
             Университете имени И. С. Тургенева"
           </p>
-        </div>
-        <div className={cl.secondFact}>
+        </motion.div>
+        <motion.div
+          className={cl.secondFact}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h4 className={cl.factTitle}>
             <em>Факт обо мне №2</em>
           </h4>
@@ -47,8 +60,14 @@ const SecondColumn: FC<SecondColumnProps> = () => {
             сосредоточиться на фронтенд- <br />
             разработке
           </p>
-        </div>
-        <div className={cl.thirdFact}>
+        </motion.div>
+        <motion.div
+          className={cl.thirdFact}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h4 className={cl.factTitle}>
             <em>Факт обо мне №3</em>
           </h4>
@@ -59,7 +78,7 @@ const SecondColumn: FC<SecondColumnProps> = () => {
             технологии и инновации в свои <br />
             сферы деятельности
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

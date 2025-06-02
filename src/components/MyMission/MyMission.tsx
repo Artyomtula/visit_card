@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { motion } from "framer-motion";
 import cl from "./MyMission.module.css";
 
 import Vector from "../../assets/images/Vector_6.svg";
@@ -8,7 +9,13 @@ const MyMission: FC<MyMissionProps> = () => {
   return (
     <div className={cl.container}>
       <h5>Миссия</h5>
-      <div className={cl.mainText}>
+      <motion.div
+        className={cl.mainText}
+        initial={{ opacity: 0, x: -1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <h1>
           МОЯ ЦЕЛЬ - УЧИТЬСЯ, <br />
           РАЗВИВАТЬСЯ В <br />
@@ -20,8 +27,8 @@ const MyMission: FC<MyMissionProps> = () => {
           <br />
           НА ЭТОМ
         </h1>
-        <img src={Vector}></img>
-      </div>
+        <img className={cl.img} src={Vector}></img>
+      </motion.div>
     </div>
   );
 };

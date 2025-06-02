@@ -74,7 +74,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-60%, 10%);
+  transform: translate(-40%, -50%);
   pointer-events: none;
   width: 30%; /* или нужный размер */
   height: 30%;
