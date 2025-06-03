@@ -10,6 +10,7 @@ import WhyI from "./components/WhyI/WhyI";
 import Question from "./components/Question/Question";
 import Photo1 from "./components/Photo1/Photo1";
 import MyContacts from "./components/MyContacts/MyContacts";
+import ParallaxImage from "./components/ParallaxImage/ParallaxImage";
 
 import Photo3 from "./assets/photos/IMG_6836.jpeg";
 import Photo2 from "./assets/photos/CdF412QwphQ.jpg";
@@ -21,10 +22,10 @@ function App() {
       <WhoIsI />
       <MyMission />
       <Achivments />
-      <Photo1 src={Photo2} />
+      <ParallaxImage src={Photo2} />
       <TitleSkills />
       <Skills />
-      <Photo1 src={Photo3} />
+      <ParallaxImage src={Photo3} />
       <WhyI />
       <Question />
       <MyContacts />
