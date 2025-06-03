@@ -5,7 +5,7 @@ interface MyContactsProps {}
 
 const MyContacts: FC<MyContactsProps> = () => {
   return (
-    <div className={cl.container} id="contacts">
+    <section className={cl.container} id="contacts">
       <div className={cl.subContainer}>
         <div className={cl.emailLine}>
           <span>ARTYOMTULYAKOV@GMAIL.COM&nbsp;•&nbsp;</span>
@@ -23,7 +23,7 @@ const MyContacts: FC<MyContactsProps> = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

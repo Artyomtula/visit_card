@@ -7,10 +7,10 @@ interface WhoIsIProps {}
 
 const WhoIsI: FC<WhoIsIProps> = () => {
   return (
-    <div className={cl.container} id="about-me">
+    <section className={cl.container} id="about-me">
       <FirstColumn />
       <SecondColumn />
-    </div>
+    </section>
   );
 };
 

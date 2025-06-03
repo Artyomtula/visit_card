@@ -8,10 +8,10 @@ interface MainPageProps {}
 
 const MainPage: FC<MainPageProps> = () => {
   return (
-    <div className={cl.container}>
+    <section className={cl.container}>
       <Header />
       <Hero />
-    </div>
+    </section>
   );
 };
 

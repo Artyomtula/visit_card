@@ -46,7 +46,7 @@ const aсhivments = [
 
 const Achivments: FC<AchivmentsProps> = () => {
   return (
-    <div className={cl.container} id="achivments">
+    <section className={cl.container} id="achivments">
       <div className={cl.title}>
         <h1>ДОСТИЖЕНИЯ</h1>
         <img src={Vector} className={cl.vector}></img>
@@ -82,7 +82,7 @@ const Achivments: FC<AchivmentsProps> = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

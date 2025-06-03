@@ -52,7 +52,7 @@ const Skills: FC<SkillsProps> = () => {
     },
   ];
   return (
-    <div className={cl.container} id="super-skills">
+    <section className={cl.container} id="super-skills">
       <div className={cl.subContainer}>
         <motion.div
           className={cl.hardSkills}
@@ -95,7 +95,7 @@ const Skills: FC<SkillsProps> = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

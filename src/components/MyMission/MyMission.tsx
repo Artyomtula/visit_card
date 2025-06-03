@@ -7,7 +7,7 @@ interface MyMissionProps {}
 
 const MyMission: FC<MyMissionProps> = () => {
   return (
-    <div className={cl.container}>
+    <section className={cl.container}>
       <h5>Миссия</h5>
       <motion.div
         className={cl.mainText}
@@ -29,7 +29,7 @@ const MyMission: FC<MyMissionProps> = () => {
         </h1>
         <img className={cl.img} src={Vector}></img>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

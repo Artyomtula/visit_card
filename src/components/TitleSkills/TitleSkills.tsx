@@ -4,7 +4,7 @@ interface TitleSkillsProps {}
 
 const TitleSkills: FC<TitleSkillsProps> = () => {
   return (
-    <div className={cl.container}>
+    <section className={cl.container}>
       <div className={cl.firstRow}>
         <span className={cl.dot}>•</span>
         <span className={cl.italic}>МОИ&nbsp;</span> СУПЕР СИЛЫ
@@ -25,7 +25,7 @@ const TitleSkills: FC<TitleSkillsProps> = () => {
         <span className={cl.dot}>•</span>
         <span className={cl.italic}>МОИ&nbsp;</span> СУПЕР СИЛЫ
       </div>
-    </div>
+    </section>
   );
 };
 

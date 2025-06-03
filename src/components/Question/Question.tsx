@@ -9,7 +9,7 @@ interface QuestionProps {}
 
 const Question: FC<QuestionProps> = () => {
   return (
-    <div className={cl.container}>
+    <section className={cl.container}>
       <div className={cl.subContainer}>
         <motion.div
           initial={{ opacity: 0 }}
@@ -33,7 +33,7 @@ const Question: FC<QuestionProps> = () => {
           <img className={cl.smile} src={Smile}></img>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
