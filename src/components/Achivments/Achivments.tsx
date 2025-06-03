@@ -1,7 +1,7 @@
 import React from "react";
 import type { FC } from "react";
 import cl from "./Achivments.module.css";
-import ph1 from "../../assets/photos/_-1_5.jpg";
+import ph1 from "../../assets/photos/blue_red.jpg";
 import ph2 from "../../assets/photos/GjbWy8V5N5s.jpg";
 import ph3 from "../../assets/photos/noroot.png";
 import ph4 from "../../assets/photos/noroot2.png";
@@ -46,7 +46,7 @@ const aсhivments = [
 
 const Achivments: FC<AchivmentsProps> = () => {
   return (
-    <div className={cl.container}>
+    <div className={cl.container} id="achivments">
       <div className={cl.title}>
         <h1>ДОСТИЖЕНИЯ</h1>
         <img src={Vector} className={cl.vector}></img>

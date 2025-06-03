@@ -32,7 +32,7 @@ const WhyI: FC<WhyIProps> = () => {
     },
   ];
   return (
-    <div className={cl.container}>
+    <div className={cl.container} id="why-i">
       <motion.div
         className={cl.subContainer}
         initial={{ opacity: 0 }}
