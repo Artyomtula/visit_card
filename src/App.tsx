@@ -8,7 +8,6 @@ import TitleSkills from "./components/TitleSkills/TitleSkills";
 import Skills from "./components/Skills/Skills";
 import WhyI from "./components/WhyI/WhyI";
 import Question from "./components/Question/Question";
-import Photo1 from "./components/Photo1/Photo1";
 import MyContacts from "./components/MyContacts/MyContacts";
 import ParallaxImage from "./components/ParallaxImage/ParallaxImage";
 
