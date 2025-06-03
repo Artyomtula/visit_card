@@ -18,8 +18,12 @@ const MyContacts: FC<MyContactsProps> = () => {
         <div className={cl.footer}>
           <span className={cl.copyright}>©2024</span>
           <div className={cl.links}>
-            <a href="https://vk.com/artyomtula">ВКОНТАКТЕ</a>
-            <a href="https://t.me/artyomtula">TELEGRAM</a>
+            <a className={cl.link} href="https://vk.com/artyomtula">
+              ВКОНТАКТЕ
+            </a>
+            <a className={cl.link} href="https://t.me/artyomtula">
+              TELEGRAM
+            </a>
           </div>
         </div>
       </div>
